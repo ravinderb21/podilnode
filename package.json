@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/ravinderb21/podilnode/issues"
   },
-  "homepage": "https://github.com/ravinderb21/podilnode#readme"
+  "homepage": "https://github.com/ravinderb21/podilnode#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongojs": "^2.4.1"
+  }
 }
