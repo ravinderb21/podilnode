@@ -87,7 +87,7 @@ testem.log
 
 ## auth0
 # ignore auth0-variables
-/auth0-variables.ts
+auth0-variables.ts
 
 #System Files
 .DS_Store
