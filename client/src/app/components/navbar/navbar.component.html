@@ -25,10 +25,15 @@
         </li>
       </ul>
       <button class="btn btn-primary btn-margin"
+        *ngIf="!auth.isAuthenticated()"
         (click)="auth.login()">
         Log In
       </button>
-
+      <button class="btn btn-primary btn-margin"
+        *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()">
+        Log Out
+      </button>
       <!--
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
