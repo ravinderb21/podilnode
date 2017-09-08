@@ -85,6 +85,10 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
+## auth0
+# ignore auth0-variables
+/auth0-variables.ts
+
 #System Files
 .DS_Store
 
