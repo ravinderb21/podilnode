@@ -1,11 +1,18 @@
 <div class="jumbotron text-center">
     <div class="container">
-      <h1>Podil</h1>
-      <p>Share your life moments</p>
-      <img src="assets/images/family.png" alt="">
-      <a *ngIf="!auth.isAuthenticated()"
-        (click)="auth.login()">
-        <img src="assets/images/login-btn.png" alt="">
-      </a>
+      <div class="row">
+        <div class="col">
+          <img class="img-thumbnail" src="assets/images/family.jpg" alt="">
+        </div>
+        <div class="col">
+          <h1 class="display-3">Welcome to Podil</h1>
+          <p class="lead">Share your life moments with friends and family</p>
+          <a *ngIf="!auth.isAuthenticated()"
+            (click)="auth.login()">
+            <img class="img-fluid" 
+              src="assets/images/login-btn.png" alt="">
+          </a>
+        </div>
+      </div>
     </div>
   </div>
