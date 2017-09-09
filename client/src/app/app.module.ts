@@ -9,6 +9,7 @@ import { UsersComponent } from './components/users/users.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { CallbackComponent } from './components/callback/callback.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 import { UserService } from './services/user.service';
 import { AuthService } from './auth/auth.service';
@@ -19,7 +20,8 @@ import { AuthService } from './auth/auth.service';
     UsersComponent,
     NavbarComponent,
     HomeComponent,
-    CallbackComponent
+    CallbackComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -11,11 +11,11 @@
         </li>
         <li *ngIf="auth.isAuthenticated()"
           class="nav-item">
-          <a class="nav-link" href="#">My Profile</a>
+          <a class="nav-link" href="#">My Photos</a>
         </li>
         <li *ngIf="auth.isAuthenticated()"
          class="nav-item">
-         <a class="nav-link" href="#">My Photos</a>
+         <a class="nav-link" [routerLink]="['/profile']">My Profile</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">About</a>
