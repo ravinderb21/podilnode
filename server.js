@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var http = require('http');
+var cors = require('cors');
 const app = express();
 
 const mongoose = require('mongoose');
@@ -19,19 +20,20 @@ db.on('error', function(err) {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'client/dist')));
 
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/dist/index.html'));
-});
 
 const users = require('./server/routes/users');
 app.use('/users', users);
 
 const photos = require('./server/routes/photos');
-app.use('/photos', photos);
+app.use('/api', photos);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/dist/index.html'));
+});
 
 const port = process.env.PORT || '3000';
 app.set('port', port);

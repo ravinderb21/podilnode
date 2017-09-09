@@ -8,7 +8,13 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor( public auth: AuthService ) { }
+  user_id: string;
+
+  constructor( public auth: AuthService ) { 
+    if(this.auth.isAuthenticated()) {
+      console.log("in navbar ts, authenticated and user_id initialized...");
+    }
+  }
 
   ngOnInit() {
   }

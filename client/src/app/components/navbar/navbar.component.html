@@ -11,7 +11,7 @@
         </li>
         <li *ngIf="auth.isAuthenticated()"
           class="nav-item">
-          <a class="nav-link" href="#">My Photos</a>
+          <a class="nav-link" [routerLink]="['/photo']">My Photos({{user_id}})</a>
         </li>
         <li *ngIf="auth.isAuthenticated()"
          class="nav-item">

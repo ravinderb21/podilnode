@@ -7,6 +7,7 @@ import * as auth0 from 'auth0-js';
 export class AuthService {
 
   userProfile: any;
+  user_id: string;
 
   auth0 = new auth0.WebAuth({
     clientID: AUTH_CONFIG.clientID,
@@ -71,6 +72,7 @@ export class AuthService {
     this.auth0.client.userInfo(accessToken, (err, profile) => {
       if (profile) {
         self.userProfile = profile;
+        console.log(profile.sub);
       }
       cb(err, profile);
     });

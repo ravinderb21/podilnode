@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
 import { CallbackComponent } from './components/callback/callback.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { PhotoComponent } from './components/photo/photo.component';
 
 const appRoutes: Routes = [
   {
@@ -19,12 +20,12 @@ const appRoutes: Routes = [
     component: ProfileComponent
   },
   {
-    path: 'callback',
-    component: CallbackComponent
+    path: 'photo',
+    component: PhotoComponent
   },
   {
-    path: '**',
-    redirectTo: ''
+    path: 'callback',
+    component: CallbackComponent
   }
 ];
 

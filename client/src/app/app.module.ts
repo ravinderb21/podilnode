@@ -9,10 +9,12 @@ import { UsersComponent } from './components/users/users.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { CallbackComponent } from './components/callback/callback.component';
+import { PhotoComponent } from './components/photo/photo.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
 import { UserService } from './services/user.service';
 import { AuthService } from './auth/auth.service';
+import { PhotoService } from './services/photo.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { AuthService } from './auth/auth.service';
     NavbarComponent,
     HomeComponent,
     CallbackComponent,
-    ProfileComponent
+    ProfileComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { AuthService } from './auth/auth.service';
   ],
   providers: [ 
     UserService,
-    AuthService 
+    AuthService,
+    PhotoService 
   ],
   bootstrap: [AppComponent]
 })
