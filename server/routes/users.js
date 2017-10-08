@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var mongojs = require('mongojs');
-var db = mongojs('mongodb://rav:mmivb1112@ds151117.mlab.com:51117/mytasklist_rav');
+var db = require('../db');
 
 // Error handling
 const sendError = (err, res) => {
