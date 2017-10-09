@@ -8,6 +8,9 @@ yarn-error.log*
 # DB Credentials
 db.js
 
+# Public folder
+public
+
 # Runtime data
 pids
 *.pid

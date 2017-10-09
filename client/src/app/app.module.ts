@@ -15,6 +15,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { UserService } from './services/user.service';
 import { AuthService } from './auth/auth.service';
 import { PhotoService } from './services/photo.service';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PhotoService } from './services/photo.service';
     HomeComponent,
     CallbackComponent,
     ProfileComponent,
-    PhotoComponent
+    PhotoComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -32,10 +34,10 @@ import { PhotoService } from './services/photo.service';
     HttpModule,
     routing
   ],
-  providers: [ 
+  providers: [
     UserService,
     AuthService,
-    PhotoService 
+    PhotoService
   ],
   bootstrap: [AppComponent]
 })
