@@ -11,11 +11,11 @@ import { Photo } from '../../models/photo';
 })
 export class PhotoComponent implements OnInit {
 
-  user_id: string = 'google-oauth2|106757069084437388045';
+  user_id: String = 'google-oauth2|106757069084437388045';
   photos: Photo[];
 
   constructor(private _photoService: PhotoService,
-    public auth: AuthService) { 
+    public auth: AuthService) {
     this._photoService.getPhotos(this.user_id)
       .subscribe((photos) => {
         console.log(photos);

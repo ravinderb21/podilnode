@@ -10,9 +10,9 @@ export class NavbarComponent implements OnInit {
 
   user_id: string;
 
-  constructor( public auth: AuthService ) { 
-    if(this.auth.isAuthenticated()) {
-      console.log("in navbar ts, authenticated and user_id initialized...");
+  constructor( public auth: AuthService ) {
+    if (this.auth.isAuthenticated()) {
+      console.log('in navbar ts, authenticated and user_id initialized...');
     }
   }
 
