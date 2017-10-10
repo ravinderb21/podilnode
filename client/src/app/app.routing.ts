@@ -5,6 +5,7 @@ import { UsersComponent } from './components/users/users.component';
 import { CallbackComponent } from './components/callback/callback.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PhotoComponent } from './components/photo/photo.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 const appRoutes: Routes = [
   {
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'photo',
     component: PhotoComponent
+  },
+  {
+    path: 'upload',
+    component: UploadComponent
   },
   {
     path: 'callback',

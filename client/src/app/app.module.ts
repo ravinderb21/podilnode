@@ -16,6 +16,7 @@ import { UserService } from './services/user.service';
 import { AuthService } from './auth/auth.service';
 import { PhotoService } from './services/photo.service';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     CallbackComponent,
     ProfileComponent,
     PhotoComponent,
-    GalleryComponent
+    GalleryComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
