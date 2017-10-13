@@ -21,6 +21,7 @@
     "bootstrap": "4.0.0-beta",
     "cors": "^2.8.4",
     "express": "^4.15.4",
-    "mongojs": "^2.4.1"
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.11.11"
   }
 }
