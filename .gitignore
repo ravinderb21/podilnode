@@ -63,7 +63,7 @@ typings/
 ### Angular ###
 ## Angular ##
 # compiled output
-/dist/
+client/dist/
 /tmp
 /app/**/*.js
 /app/**/*.js.map
