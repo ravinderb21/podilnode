@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # DB Credentials
-# db.js
+db.js
 
 # Runtime data
 pids
